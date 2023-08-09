@@ -580,7 +580,7 @@ class _FlutterLocationPickerState extends State<FlutterLocationPicker>
                     _debounce?.cancel();
                   }
                   setState(() {});
-                  _debounce = Timer(const Duration(milliseconds: 20), () async {
+                  _debounce = Timer(const Duration(milliseconds: 200), () async {
                     var client = http.Client();
                     try {
                       String url =
